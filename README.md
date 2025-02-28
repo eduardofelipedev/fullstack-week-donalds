@@ -38,3 +38,11 @@ npm install @prisma/client@6.2.1
 
 npx prisma init
 npx prisma migrate dev
+
+npm install -D ts-node@10.9.2
+
+no package.json
+"prisma": {
+"seed": "ts-node ./prisma/seed.ts"
+},
+npx prisma db seed

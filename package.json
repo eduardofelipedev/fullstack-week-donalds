@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prisma": {
+    "seed": "ts-node ./prisma/seed.ts"
+  },
   "dependencies": {
     "@prisma/client": "^6.2.1",
     "@tailwindcss/postcss": "^4.0.9",
@@ -22,6 +25,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
