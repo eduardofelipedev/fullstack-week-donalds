@@ -46,3 +46,29 @@ no package.json
 "seed": "ts-node ./prisma/seed.ts"
 },
 npx prisma db seed
+
+npm install tailwindcss @tailwindcss/postcss postcss
+
+Create a postcss.config.mjs file in the root of your project and add the @tailwindcss/postcss plugin to your PostCSS configuration.
+
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+export default config;
+
+Add an @import to ./src/app/globals.css that imports Tailwind CSS.
+
+@import "tailwindcss";
+
+
+npx shadcn@latest init
+-> default
+-> neutral
+-> yes para css variables
+-> Use --legacy-peer-deps
+
+npx shadcn@latest add button
+-> Use --legacy-peer-deps
+
