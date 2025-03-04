@@ -70,5 +70,11 @@ npx shadcn@latest init
 -> Use --legacy-peer-deps
 
 npx shadcn@latest add button
+npx shadcn@latest add card
 -> Use --legacy-peer-deps
 
+liberar o dominio em next.config.ts
+
+images: {
+    remotePatterns: [{ hostname: "u9a6wmr3as.ufs.sh" }],
+},
