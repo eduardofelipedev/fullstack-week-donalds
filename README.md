@@ -71,6 +71,7 @@ npx shadcn@latest init
 
 npx shadcn@latest add button
 npx shadcn@latest add card
+npx shadcn@latest add scroll-area
 -> Use --legacy-peer-deps
 
 liberar o dominio em next.config.ts
