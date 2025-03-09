@@ -57,7 +57,7 @@ export default function RestaurantCategories({
                   : "secondary"
               }
               size="sm"
-              className="rounded-full"
+              className="rounded-full cursor-pointer"
               onClick={() => HandleCategoryClick(category)}
             >
               {category.name}
@@ -66,9 +66,13 @@ export default function RestaurantCategories({
         </div>
         <ScrollBar orientation="horizontal" />
       </ScrollArea>
-      <h3 className="px-5 font-semibold pt-2">
-        {selectedCategory.name} ({selectedCategory.Product.length})
-      </h3>
+      <div className="px-5  flex-row flex items-center p-5 pt-2">
+        <h3 className="font-semibold ">{selectedCategory.name}</h3>
+        <span className="bg-red-500 rounded-full ml-2 px-2 text-white font-semibold">
+          {selectedCategory.Product.length}
+        </span>
+      </div>
+
       <Products products={selectedCategory.Product} />
     </div>
   );
